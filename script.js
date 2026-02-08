@@ -1,30 +1,31 @@
-let balance = 500000;
-let transactions = [
-    {type: "Deposit", amount: 100000},
-    {type: "Withdraw", amount: 20000}
-];
+#  UBA Online Banking Simulation App
 
-function transferMoney() {
-    const recipient = document.getElementById("recipient").value;
-    const amount = Number(document.getElementById("amount").value);
+A frontend-based online banking simulation application built to demonstrate core banking operations and DevOps engineering practices such as CI/CD readiness, automation, and scalable architecture design.
 
-    if(amount > balance) {
-        alert("Insufficient funds!");
-        return;
-    }
+This project simulates a real-world banking dashboard where users can log in, view account balance, perform transfers, and track transaction history.
 
-    balance -= amount;
-    transactions.push({type: "Transfer", amount: amount, recipient: recipient});
-    document.querySelector("header p").textContent = `Balance: ₦${balance}`;
-    updateTransactions();
-}
+---
 
-function updateTransactions() {
-    const list = document.getElementById("transaction-list");
-    list.innerHTML = "";
-    transactions.forEach(tx => {
-        list.innerHTML += `<li>${tx.type} ₦${tx.amount} ${tx.recipient ? "to " + tx.recipient : ""}</li>`;
-    });
-}
+##  Features
 
-updateTransactions();
+User Login Authentication (simulated)Account Balance DisplayTransaction History with timestampsMoney Transfer with validationError and success notificationsResponsive and clean UILogout functionalityModular code structure (HTML, CSS, JavaScript)
+
+---
+
+##  Tech Stack
+
+*Frontend:
+HTML5
+CSS3
+JavaScript (Vanilla JS)
+
+*DevOps Ready:
+GitHub Pages deployment
+CI/CD ready (GitHub Actions – future integration)
+Docker-ready architecture (future upgrade)
+Cloud deployment ready (AWS / Azure / GCP)
+
+---
+
+##  Project Structure**
+     
