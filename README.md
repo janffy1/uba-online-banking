@@ -1,51 +1,32 @@
-# UBA Online Banking Dashboard (Frontend Only)
+#  UBA Online Banking Simulation App
 
-## Description
-This is a frontend-only Online Banking Dashboard inspired by UBA.  
-Users can:
-- View account balance in Naira (₦)
-- See transaction history (simulated)
-- Transfer money (simulated)
-- Enjoy a clean, UBA-themed interface
+A frontend-based online banking simulation application built to demonstrate core banking operations and DevOps engineering practices such as CI/CD readiness, automation, and scalable architecture design.
 
-This project is built with **HTML, CSS, and JavaScript** and hosted on **GitHub Pages** (optional).  
-It is designed for **learning frontend development, interactivity, and GitHub workflow step by step**.
+This project simulates a real-world banking dashboard where users can log in, view account balance, perform transfers, and track transaction history.
 
 ---
 
-## Tech Stack
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- GitHub Pages (for live hosting)
+##  Features
+
+User Login Authentication (simulated)Account Balance DisplayTransaction History with timestampsMoney Transfer with validationError and success notificationsResponsive and clean UILogout functionalityModular code structure (HTML, CSS, JavaScript)
 
 ---
 
-## Features
-1. **Dashboard**: Displays user name, balance, and transaction history  
-2. **Transfer Money**: Simulated transfer functionality using JS  
-3. **UBA-Themed Design**: Red and white colors, Naira currency  
-4. **Responsive Layout**: Works on mobile and desktop  
-5. **GitHub Version Control**: Step-by-step commits for learning workflow
+##  Tech Stack
+
+*Frontend:
+HTML5
+CSS3
+JavaScript (Vanilla JS)
+
+*DevOps Ready:
+GitHub Pages deployment
+CI/CD ready (GitHub Actions – future integration)
+Docker-ready architecture (future upgrade)
+Cloud deployment ready (AWS / Azure / GCP)
 
 ---
 
-## How to Run
-1. Open `index.html` in a browser, or  
-2. Deploy on **GitHub Pages** to see a live demo  
+##  Project Structure**
 
----
 
-## Learning Goals
-- Practice frontend UI development  
-- Learn JavaScript interactivity for a real-world app  
-- Understand GitHub version control and step-by-step commits  
-- Build a portfolio-ready project for interviews
-
----
-
-## Optional Enhancements
-- Add a **login page**  
-- Style with **Bootstrap** or **Tailwind CSS**  
-- Add **additional transaction types**  
-- Deploy fully on **GitHub Pages** for a live demo
