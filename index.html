@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UBA Online Banking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="background-color:#E10600; color:white; padding:20px; text-align:center;">
+        <h1>Welcome, Jane Collins</h1>
+        <p>Balance: ₦500,000</p>
+    </header>
+
+    <section id="transactions">
+        <h2>Transactions</h2>
+        <ul id="transaction-list">
+            <li>Deposit ₦100,000</li>
+            <li>Withdraw ₦20,000</li>
+        </ul>
+    </section>
+
+    <section id="transfer">
+        <h2>Transfer Money</h2>
+        <input type="text" id="recipient" placeholder="Recipient">
+        <input type="number" id="amount" placeholder="₦ Amount">
+        <button onclick="transferMoney()" style="background-color:#E10600; color:white; padding:10px 20px; border:none; border-radius:5px;">
+            Send
+        </button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
