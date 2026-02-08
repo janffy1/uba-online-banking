@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>UBA Online Banking</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>UBA Online Banking</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header style="background-color:#E10600; color:white; padding:20px; text-align:center;">
-        <h1>Welcome, Jane Collins</h1>
-        <p>Balance: ₦500,000</p>
-    </header>
 
-    <section id="transactions">
-        <h2>Transactions</h2>
-        <ul id="transaction-list">
-            <li>Deposit ₦100,000</li>
-            <li>Withdraw ₦20,000</li>
-        </ul>
-    </section>
+<header>
+  <h1>UBA Online Banking</h1>
+</header>
 
-    <section id="transfer">
-        <h2>Transfer Money</h2>
-        <input type="text" id="recipient" placeholder="Recipient">
-        <input type="number" id="amount" placeholder="₦ Amount">
-        <button onclick="transferMoney()" style="background-color:#E10600; color:white; padding:10px 20px; border:none; border-radius:5px;">
-            Send
-        </button>
-    </section>
+<!-- LOGIN -->
+<section id="login-section">
+  <h2>Login</h2>
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+  <p id="login-message"></p>
+</section>
 
-    <script src="script.js"></script>
+<!-- DASHBOARD -->
+<section id="dashboard" style="display:none;">
+  <h2>Welcome, <span id="user-name"></span></h2>
+  <p><strong>Balance:</strong> ₦<span id="balance"></span></p>
+
+  <h3>Transactions</h3>
+  <ul id="transaction-list"></ul>
+
+  <h3>Transfer Money</h3>
+  <input type="text" id="recipient" placeholder="Recipient">
+  <input type="number" id="amount" placeholder="₦ Amount">
+  <button onclick="transferMoney()">Send</button>
+
+  <p id="message"></p>
+
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
