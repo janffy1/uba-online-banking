@@ -1,5 +1,3 @@
-
-  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,77 +5,101 @@
     <title>UBA Online Banking</title>
     <style>
         body {
-            background-color: #ffffff; /* white background */
+            background-color: #d2232a; /* red background */
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
+            color: #d2232a;
         }
 
         header {
-            background-color: #d2232a; /* UBA red */
+            background-color: #ffffff; /* white header */
             padding: 20px;
-        }
-
-        header img {
-            max-width: 150px;
-            height: auto;
-            margin-bottom: 10px;
         }
 
         header h1 {
             margin: 0;
-            color: #ffffff;
+            color: #d2232a; /* red text */
             font-size: 28px;
         }
 
         .container {
             margin: 50px auto;
-            width: 300px;
-            padding: 30px;
-            border: 2px solid #d2232a;
-            border-radius: 10px;
-            background-color: #d2232a;
-            color: #ffffff;
+            width: 320px;
+            padding: 40px;
+            border-radius: 12px;
+            background-color: #ffffff; /* white form background */
+            color: #d2232a; /* red text inside form */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
         }
 
         .container input[type="text"],
         .container input[type="password"] {
             width: 90%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
+            padding: 12px;
+            margin: 12px 0;
+            border: 1px solid #d2232a;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+
+        .container input[type="text"]:focus,
+        .container input[type="password"]:focus {
+            border: 2px solid #a81a21; /* darker red on focus */
+            box-shadow: 0 0 8px rgba(168, 26, 33, 0.6);
+            outline: none;
         }
 
         .container input[type="submit"] {
             width: 95%;
-            padding: 10px;
-            margin-top: 15px;
+            padding: 12px;
+            margin-top: 20px;
             border: none;
-            border-radius: 5px;
-            background-color: #ffffff;
-            color: #d2232a;
+            border-radius: 6px;
+            background-color: #d2232a; /* red button */
+            color: #ffffff; /* white text */
             font-weight: bold;
             cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .container input[type="submit"]:hover {
+            background-color: #a81a21; /* darker red */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
 
         .dropdown {
-            margin-top: 20px;
+            margin-top: 25px;
         }
 
         .dropdown select {
-            padding: 10px;
+            padding: 12px;
             width: 100%;
-            border-radius: 5px;
-            border: none;
+            border-radius: 6px;
+            border: 1px solid #d2232a;
+            color: #d2232a;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .dropdown select:hover,
+        .dropdown select:focus {
+            border: 2px solid #a81a21;
+            box-shadow: 0 0 8px rgba(168, 26, 33, 0.6);
+            outline: none;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/UBA_logo.svg" alt="UBA Logo">
         <h1>Welcome to UBA Online Banking</h1>
     </header>
 
